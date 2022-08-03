@@ -1,0 +1,31 @@
+.dropDown{
+    border-bottom: solid 1px #121212;
+}
+.dropDown-view{
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+.dropDown .dropDown-view:hover ~ .dropDown-list{
+    max-height: 100vh;
+}
+.dropDown-list{
+    max-height: 0;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+        /* background: #6f6eb1; */
+}
+.dropDown-item{
+    border-bottom: solid 1px #171718;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 5px 15px;
+}
+.dropDown-item:hover{
+    opacity: 1;
+}
+.dropDownOpen{
+    max-height: 100vh;
+}

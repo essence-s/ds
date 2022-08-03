@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Navbar, Footer } from "./components/layouts/index";
+import { ModalCookies } from "./components/common";
+import Home from "./views/home/Home";
+import { DivSwitchTheme } from "./components/common/switchTheme/SwitchTheme";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DivSwitchTheme className="App" data={{ c0: "default", c2: "black" }}>
+      <ModalCookies></ModalCookies>
+      <Navbar></Navbar>
+      <Home></Home>
+      <Footer></Footer>
+    </DivSwitchTheme>
   );
 }
 

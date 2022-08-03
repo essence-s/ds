@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +14,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* box-sizing: border-box; */
+    color-scheme: light dark;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --font-family-1:'Poppins', sans-serif;
+   /* --font-family-1:'Source Sans Pro' sans-serif; */
+  --font-family: 'Bebas Neue', sans-serif;
+  --h1-font-weight: bold;
+  --h1-font-size: 40px;
+  --h6-font-weight: bold;
+  --h6-font-size: 24px;
+   /* --font-family-1: 'Manrope' ,sans-serif; */
+  /* --font-family-1: 'Roboto', sans-serif; */
+
+  --gradients-bg:linear-gradient(45deg, #ef877e, #f0a57f);
+  --gradients-bg-2:linear-gradient(10deg,#98BAE7 1.84%,#B8E4F0);
+  --gradients-bg-text-2:#111111;
+
+  --gradients-text:linear-gradient(10deg,#fbb599 1.84%,#dc3b50);
+  --title-shadow-color:transparent;
+  /* --gradients-bar:linear-gradient(20deg,#550555 1.84%,#9650e6); */
+  /* 6E3CBC linear-gradient(10deg,#98BAE7 1.84%,#B8E4F0); */
+  --color-bg:#ffffff;
+  --color-bg-2:#98BAE7;
+  --color-bg-3:#B8E4F0;
+  --color-bg-4:#ffffff;
+  
+  --color-text:#3e3e42;
+  --color-text-2:#e5e5e5;
+  --color-text-3:#222222;
+
+  --color-title:#353535;
+  --color-subtext:#ef877e;
+  --color-footer: #235562;
+  --color-icon: #e2e6eb;
+  --color-button:#ef877e;
+  --color-button-2:#f3e521;
+}
+
+.black{
+  --gradients-bg:linear-gradient(45deg, #393a3d, #28292f);
+  --gradients-bg-2:linear-gradient(10deg,#98BAE7 1.84%,#B8E4F0);
+  --gradients-bg-text-2:#202024;
+
+  --gradients-text:linear-gradient(10deg,#fbb599 1.84%,#dc3b50);
+  --title-shadow-color:#f5f5ffe8;
+
+  --color-bg:#12141a;
+  --color-bg-2:#39393a;
+  --color-bg-3:#272835;
+  --color-bg-4:#212227;
+  
+  --color-text:#e8e8e8;
+  --color-text-2:#BDBDBD;
+  --color-text-3:#ffffff;
+
+  --color-title:#dadada;
+  --color-subtext:#ef877e;
+  --color-footer: #235562;
+  --color-icon: #e9ecf0;
+  --color-button: #ef877e;
+  --color-button-2:#f3e521;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fc95c5;
 }

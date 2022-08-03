@@ -1,0 +1,28 @@
+.faq{
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 30px;
+}
+.faq__title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.faq__dropdow{
+  max-width: 533px;
+}
+.faq__dropdowview{
+  border-bottom: 1.5px dotted var(--color-text);
+  display: flex;
+  gap: 20px;
+}
+.faq__dropdowview span:nth-child(1){
+  flex: 1;
+}
+.faq__dropdowview span:nth-child(2){
+  transform: rotate(180deg);
+}
